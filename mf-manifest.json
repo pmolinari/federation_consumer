@@ -1,0 +1,76 @@
+{
+  "id": "federation_consumer",
+  "name": "federation_consumer",
+  "metaData": {
+    "name": "federation_consumer",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "federation_consumer"
+    },
+    "remoteEntry": {
+      "name": "",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": ".",
+      "api": "."
+    },
+    "globalName": "federation_consumer",
+    "pluginVersion": "0.6.6",
+    "publicPath": "/",
+    "prefetchInterface": false
+  },
+  "shared": [
+    {
+      "id": "federation_consumer:react-dom",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/lib-react.7d3496f3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "federation_consumer:react",
+      "name": "react",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/lib-react.7d3496f3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "federationContainerName": "federation_provider",
+      "moduleName": "components",
+      "alias": "federation_provider",
+      "entry": "https://federation-provider.vercel.app/mf-manifest.json"
+    }
+  ],
+  "exposes": []
+}
